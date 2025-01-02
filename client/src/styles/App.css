@@ -1,0 +1,114 @@
+/* App.css */
+
+/* Impostiamo il font generale per il sito */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7fa;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Intestazione e titoli */
+  h1, h2, h3 {
+    font-family: 'Arial', sans-serif;
+    color: #4CAF50;
+  }
+  
+  /* Box generali con margini */
+  .container {
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  /* Card per eventi */
+  .event-card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 15px 0;
+    padding: 20px;
+    transition: all 0.3s ease;
+  }
+  
+  .event-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Modulo di registrazione */
+  form input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+  }
+  
+  form button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 12px;
+    font-size: 16px;
+    width: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  form button:hover {
+    background-color: #45a049;
+  }
+  
+  /* Stili per la lista degli eventi */
+  .event-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+  }
+  
+  /* Singolo evento nella lista */
+  .event-item {
+    width: 30%;
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+  }
+  
+  .event-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Pulsante per la registrazione */
+  .register-btn {
+    background-color: #f4b400;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .register-btn:hover {
+    background-color: #f39c12;
+  }
+  
+  /* Responsività per mobile */
+  @media (max-width: 768px) {
+    .event-item {
+      width: 100%;
+    }
+  
+    .event-list {
+      flex-direction: column;
+    }
+  }
+  
