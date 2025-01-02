@@ -13,7 +13,25 @@ Event Manager is a full-stack application designed to manage events such as conf
 
 ## Project Structure
 
-event-manager/ │ ├── server/ # Backend with Node.js + Express │ ├── controllers/ # Server logic handlers │ ├── models/ # Mongoose models │ ├── routes/ # API routes │ └── server.js # Server entry point │ └── client/ # Frontend with React ├── src/ │ ├── components/ # React components │ └── App.js # Main component └── package.json # Dependencies and configurations
+event-manager/
+│
+├── server/                    # Backend with Node.js + Express
+│   ├── controllers/            # Server logic handlers
+│   │   └── eventController.js  # Handles event-related logic
+│   ├── models/                 # Mongoose models for MongoDB
+│   │   └── Event.js            # Model for events
+│   ├── routes/                 # API routes
+│   │   └── eventRoutes.js      # Event API routes
+│   └── server.js               # Server entry point, connects everything
+│
+└── client/                    # Frontend with React
+    ├── src/
+    │   ├── components/         # React components
+    │   │   ├── EventList.js    # Component to list events
+    │   │   └── EventForm.js    # Component to create events
+    │   └── App.js              # Main React component, starting point
+    └── package.json            # Frontend dependencies and configurations
+
 
 
 ## Installation
